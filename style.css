@@ -99,9 +99,13 @@ nav li a:hover, .nav li a:focus {
 }
 
 /*jumbotron*/
-
 .jumbotron {
 	background-color: #b3e6ff;
+	background-image: url("./img/img10.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 0.7;
 	width: 100%;
   	height: 100vh;
   	padding: 0;
@@ -109,11 +113,11 @@ nav li a:hover, .nav li a:focus {
   	
 }
 .jumbotron_img {
-	background-image: url("./img/img10.png");
-	background-position: 0 0;
+	/*background-image: url("./img/img10.png");
+	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	opacity: 0.7;
+	opacity: 0.7;*/
 	width: 50%;
 	float: left;
 }
@@ -130,7 +134,7 @@ nav li a:hover, .nav li a:focus {
 	text-align: right;
 	text-transform: uppercase;
 	letter-spacing: 12px;
-	margin-top: 200px;
+	margin-top: 90px;
 	margin-right: 15vw;
 }
 .slogan h2 {
@@ -142,7 +146,7 @@ nav li a:hover, .nav li a:focus {
 }
 .slogan p {
 	font-family: 'Ubuntu', sans-serif;
-	color: #404040;
+	color: #FFF;
 	font-size: 40px;
 	font-weight: 500;
 	text-align: right;
@@ -161,22 +165,24 @@ nav li a:hover, .nav li a:focus {
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;*/
-	background-color: #b3e6ff;
+	background-color: #FFF;
 	/*opacity: 0.7;*/
 	width: 100%;
-  	height: 100vh;
+  	height: 70vh;
   	/*padding-left: 25vw;
   	padding-top: 30vh;*/
   	margin-bottom: 0;
+  	padding-top: 7vh;
+  	
 }
 .about {
-	width: 45%;
-	height: 60vh;
+	width: 50%;
+	height: 40vh;
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	background-color: #4d4d4d;
+	background-color: #FFF;
 }
 .photo {
 	
@@ -188,21 +194,20 @@ nav li a:hover, .nav li a:focus {
 	width: 285px;
 	height: 273px;
 	object-fit: cover;
-	border-radius: 10px;
+	border-radius: 50%;
 }
 /*.about_text {
 	height: 273px;
 }*/
 .about_text h2 {
-	font-size: 20px;
-	color: #FFF;
+	color: #000;
 	font-weight: 700;
 	letter-spacing: 5px;
 	text-align: left;
 	/*padding-left: 60px;*/
 }
 .about_text p {
-	color: #FFF;
+	color: #000;
 	font-size: 16px;
 	letter-spacing: 3px;
 	/*padding-left: 60px;*/
@@ -214,13 +219,13 @@ nav li a:hover, .nav li a:focus {
 .my_skills {
 	height: 100vh;
 	text-align: center;
-	padding-top: 20px;
-	background-color: #b3e6ff;
+	padding-top: 50px;
+	background-color: #000;
 	/*border: 3px solid green;*/
 }
 .my_skills h2 {
 	padding-bottom: 15px;
-	color: #000;
+	color: #FFF;
 }
 .row_1 {
 	display: flex;
@@ -230,16 +235,16 @@ nav li a:hover, .nav li a:focus {
 .row_1 div {
 	/*border: 4px solid #000;*/
 	border-radius: 10px;
-	width: 130px;
-	height: 130px;
+	width: 100px;
+	height: 100px;
 	background-color: #FFF;
 	margin: 10px;
 	padding: 10px;
 	
 }
 .row_1 img {
-	width: 110px;
-	height: 110px;
+	width: 80px;
+	height: 80px;
 	object-fit: cover;
 }
 
@@ -247,7 +252,7 @@ nav li a:hover, .nav li a:focus {
 .my_project {
 	background-color: #b3e6ff;
 	padding-top: 50px;
-	padding-bottom: 50px
+	padding-bottom: 50px;
 }
 .my_project h2 {
 	text-align: center;
@@ -255,55 +260,51 @@ nav li a:hover, .nav li a:focus {
 }
 .row_2 {
 	display: flex;
+	margin: 0 auto;
 	justify-content: center;
-	align-items: center;
-	flex-wrap: nowrap;
-	width: 100%;
+	/*align-items: center;*/
+	flex-wrap: wrap;
+	width: 1100px;
 	height: auto;
+	margin-bottom: 20px;
+	/*border: 2px solid orange;*/
 }
-.describe h2 {
-	text-align: left;
-}
-.describe {
-	width: 30%;
-	text-align: left;
-	padding-right: 10%;
-	padding-left: 20px;
-	padding-bottom: 20px;
-	font-size: 18px;
-	/*border: 2px solid yellow;*/
-	border-radius: 10px 0 0 10px;
-	background-color: #FFF;
-}
+
 .picture {
 	position: relative;
-	border: 2px solid orange;
-	margin-bottom: 20px;
+	padding: 30px;
+	background-color: #4d4d4d;
+	border-radius: 10px;
+	/*border: 2px solid orange;*/
+	margin-right: 20px;
 }
 .picture img {
 	display: block;
-	width: 550px;
-	height: auto;
-	float: left;
+	width: 400px;
+	height: 250px;
 	object-fit: cover;
 }
 .layer_gal {
 	opacity: 0;
 	position: absolute;
-	height: auto;
-	width: 550px;
+	width: 400px;
+	height: 250px;
 	text-align: center; 
-	cursor: pointer;
+	color: #FFF;
+	padding: 0 10px;
 }
 .layer_gal i {
-	background: red;
+	background: #000;
+	color: #fff;
 	position: relative;
-	top: 50vh;
+	margin-top: 80vh;
 	border-radius: 10%;
 	padding: 5px;
 	margin: 5px;
+	border: 2px solid #FFF;
+	cursor: pointer;
 }
-.img:hover .layer_gal {
+.picture:hover .layer_gal {
 	opacity: 1;
 	background: rgba(0, 0, 0, 0.5);
 	transition-duration: 0.8s;
