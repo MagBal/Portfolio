@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,500,500i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
 
 * { 
 	box-sizing: border-box;
@@ -42,27 +43,27 @@ body {
 /*jumbotron*/
 /**navigation**/
 .navbar .navbar-nav {
-  	display: inline-block;
+  	/*display: inline-block;*/
   	float: right;
-  	vertical-align: top;
+  	/*vertical-align: top;*/
 }
-.navbar .navbar-collapse {
+/*.navbar .navbar-collapse {
   	text-align: center;
-}
-.nav {
- 	/*background: transparent;*/
-  	/*overflow: hidden;*/
+}*/
+nav {
  	margin: 0;
  	padding: 0;
+ 	height: 60px;
  	text-align: center;
+ 	background-color: #000;
 }
-.nav li {
+nav li {
     list-style: none;
     padding: 2px;
     margin-right: 4px;
     text-align: left;
    }
-.nav li a {
+nav li a {
 	text-decoration: none;
 	background-color: transparent;
 	color: #fff;
@@ -70,24 +71,25 @@ body {
 	font-weight: 700;
 	line-height: 16px;
 	text-transform: uppercase;
-	letter-spacing: 5px;
+	letter-spacing: 3px;
 	text-shadow: 2px 2px #000;
 	-webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -o-transition: all 0.3s;
 	transition: all .3s;
 }
-.nav li a:hover, .nav li a:focus {
+nav li a:hover, .nav li a:focus {
     color: #FFF;
     transform: scale(1.2);
     background: rgba(255,20,20,0);
 }
 .navbar-brand {
 	color: #FFF;
-	font-size: 30px;
+	font-size: 16px;
 	font-weight: 700;
-	letter-spacing: 5px;
+	letter-spacing: 3px;
 	text-shadow: 2px 2px #000;
+	background: rgba(255,20,20,0);
 	transition: all .3s;
 }
 .navbar-brand:hover {
@@ -99,88 +101,112 @@ body {
 /*jumbotron*/
 
 .jumbotron {
-	background-image: url("./img/img7.jpg");
-	background-position: center center;
+	background-color: #b3e6ff;
+	width: 100%;
+  	height: 100vh;
+  	padding: 0;
+  	margin: 0;
+  	
+}
+.jumbotron_img {
+	background-image: url("./img/img10.png");
+	background-position: 0 0;
 	background-repeat: no-repeat;
 	background-size: cover;
 	opacity: 0.7;
-	width: 100%;
-  	height: 100vh;
-  	margin-bottom: 0;
-}
-.slogan h1 {
-	color: #fff;
-	font-size: 40px;
-	font-weight: 700;
-	text-align: center;
-	text-transform: uppercase;
-	text-shadow: 3px 3px #000;
-	letter-spacing: 12px;
-	margin-top: 50px;
-}
-.slogan p {
-	color:  #fff;
-	font-size: 25px;
-	font-weight: 500;
-	text-align: center;
-	letter-spacing: 4px;
-	text-shadow: 3px 3px #000;
-	margin-top: 25px;
-	margin-bottom: 50px;
+	width: 50%;
+	float: left;
 }
 .slogan {
+	width: 50%;
+	float: right;
+	margin-top: 7vh;
+	
+}
+.slogan h1 {
+	font-family: 'Permanent Marker', cursive;
+	color: #000;
+	font-size: 120px;
+	text-align: right;
+	text-transform: uppercase;
+	letter-spacing: 12px;
+	margin-top: 200px;
+	margin-right: 15vw;
+}
+.slogan h2 {
+	font-family: 'Permanent Marker', cursive;
+	color: #000;
+	font-size: 70px;
+	text-align: right;
+	margin-right: 15vw;
+}
+.slogan p {
+	font-family: 'Ubuntu', sans-serif;
+	color: #404040;
+	font-size: 40px;
+	font-weight: 500;
+	text-align: right;
+		
+}
+/*.slogan {
 	width: 50%;
 	margin-top: 140px;
 	background-color: #000;
 	border: 3px solid #FFF;
-}
+}*/
 
 /*about me*/
 .about_Me {
-	background-image: url("./img/img7.jpg");
+	/*background-image: url("./img/img7.jpg");
 	background-position: center center;
 	background-repeat: no-repeat;
-	background-size: cover;
-	opacity: 0.7;
+	background-size: cover;*/
+	background-color: #b3e6ff;
+	/*opacity: 0.7;*/
 	width: 100%;
   	height: 100vh;
-  	padding-left: 25vw;
-  	padding-top: 30vh;
+  	/*padding-left: 25vw;
+  	padding-top: 30vh;*/
   	margin-bottom: 0;
 }
 .about {
-	background-color: #000;
-	margin-right: 300px;
+	width: 45%;
+	height: 60vh;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #4d4d4d;
 }
 .photo {
+	
 	width: 285px;
 	height: 273px;
+
 }
 .photo img {
 	width: 285px;
 	height: 273px;
 	object-fit: cover;
+	border-radius: 10px;
 }
-.about {
-	box-shadow: 2px 2px #FFF;
-}
-.about_text {
+/*.about_text {
 	height: 273px;
-}
+}*/
 .about_text h2 {
 	font-size: 20px;
 	color: #FFF;
 	font-weight: 700;
 	letter-spacing: 5px;
 	text-align: left;
-	padding-left: 60px;
+	/*padding-left: 60px;*/
 }
 .about_text p {
 	color: #FFF;
 	font-size: 16px;
 	letter-spacing: 3px;
-	padding-left: 60px;
-	padding-right: 20px;
+	/*padding-left: 60px;*/
+	/*padding-right: 20px;*/
 	text-align: left;
 }
 
@@ -189,30 +215,101 @@ body {
 	height: 100vh;
 	text-align: center;
 	padding-top: 20px;
-	background-color: #000;
+	background-color: #b3e6ff;
+	/*border: 3px solid green;*/
 }
 .my_skills h2 {
 	padding-bottom: 15px;
-	color: #FFF;
+	color: #000;
 }
-
-.col {
-	/*border: 2px solid red;*/
+.row_1 {
+	display: flex;
+	justify-content: center;
+	flex-wrap: nowrap;
+}
+.row_1 div {
+	/*border: 4px solid #000;*/
 	border-radius: 10px;
 	width: 130px;
 	height: 130px;
 	background-color: #FFF;
 	margin: 10px;
+	padding: 10px;
 	
 }
-
-.col img {
+.row_1 img {
 	width: 110px;
 	height: 110px;
 	object-fit: cover;
-	padding: 10px;
-
 }
-.skills {
+
+/*works*/
+.my_project {
+	background-color: #b3e6ff;
+	padding-top: 50px;
+	padding-bottom: 50px
+}
+.my_project h2 {
+	text-align: center;
+	margin-bottom: 40px;
+}
+.row_2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: nowrap;
+	width: 100%;
+	height: auto;
+}
+.describe h2 {
+	text-align: left;
+}
+.describe {
+	width: 30%;
+	text-align: left;
+	padding-right: 10%;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	font-size: 18px;
+	/*border: 2px solid yellow;*/
+	border-radius: 10px 0 0 10px;
+	background-color: #FFF;
+}
+.picture {
+	position: relative;
+	border: 2px solid orange;
+	margin-bottom: 20px;
+}
+.picture img {
+	display: block;
+	width: 550px;
+	height: auto;
+	float: left;
+	object-fit: cover;
+}
+.layer_gal {
+	opacity: 0;
+	position: absolute;
+	height: auto;
+	width: 550px;
+	text-align: center; 
+	cursor: pointer;
+}
+.layer_gal i {
+	background: red;
+	position: relative;
+	top: 50vh;
+	border-radius: 10%;
+	padding: 5px;
+	margin: 5px;
+}
+.img:hover .layer_gal {
+	opacity: 1;
+	background: rgba(0, 0, 0, 0.5);
+	transition-duration: 0.8s;
+	left: 0;
+	right: 0;
+	margin: auto; 
 	
 }
+

@@ -11,30 +11,32 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+	<nav class="navbar nnavbar-dark">
+		<div class="navbar-header">
+        	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            	<span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">MB</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li><a href="#home">Home<span class="sr-only"></span></a></li>
+				<li><a href="#aboutMe">About me</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#works">Works</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</div
+	</nav>
 	<section id="home" class="jumbotron">
 		<div class="container jumbo">
-			<nav class="container navbar">
-				<div class="navbar-header">
-                	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    	<span class="sr-only">Toggle navigation</span>
-                     	<span class="icon-bar"></span>
-                    	<span class="icon-bar"></span>
-                    	<span class="icon-bar"></span>
-                	</button>
-                	<a class="navbar-brand" href="#">MB</a>
-            	</div>
-            	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav">
-						<li><a href="#home">Home<span class="sr-only"></span></a></li>
-						<li><a href="#aboutMe">About me</a></li>
-						<li><a href="#skills">Skills</a></li>
-						<li><a href="#works">Works</a></li>
-						<li><a href="#contact">Contact</a></li>
-					</ul>
-				</div
-			</nav>
+			<div class="container jumbotron_img"></div>
 			<div class="container slogan">
-				<h1>Front-end developer</h1>
+				<h1>Front-end</h1>
+				<h2>developer<h2>
 				<p>Magda Balun</p>
 			</div>
 		</div>
@@ -57,63 +59,186 @@
 	<section id="skills" class="my_skills">
 		<h2>My skills</h2>
 		<div class="container skills">
-    		<div class="row">
-    			<div class="col col-3 col-m-3 col-s-3">
+    		<div class="row_1">
+    			<div>
     				<img src="./img/html.png" alt="html">
     			</div>
-    			<div class="col col-3 col-m-3 col-s-3">
+    			<div>
     				<img src="./img/css.png" alt="css">
     			</div>
-    			<div class="col col-3 col-m-3 col-s-3">
+    			<div>
     				<img src="./img/js.png" alt="js">
     			</div>
-    			<div class="col col-3 col-m-3 col-s-3">
+    			<div>
     				<img src="./img/jquery.png" alt="jquery">
     			</div>
     		</div>
-    		<div class="row">
-    			<div class="col col-3 col-m-3 col-s-3">
+    		<div class="row_1">
+    			<div>
     				<img src="./img/rwd.png" alt="rwd">
     			</div>
-    			<div class="col col-3 col-m-3 col-s-3">
+    			<div>
     				<img src="./img/sass.jpg" alt="sass">
     			</div>
-    			<div class="col col-3 col-m-3 col-s-3">
+    			<div>
     				<img src="./img/bootstrap.png" alt="bootstrap">
     			</div>
-    			<div class="col col-3 col-m-3 col-s-3">
+    			<div>
     				<img src="./img/es6.png" alt="es6">
     			</div>
     		</div>
-    		<div class="row">
-    			<div class="col col-3 col-m-3 col-s-3">
-    				<img src="./img/ajax.jpg" alt="ajax">
+    		<div class="row_1">
+    			<div>
+    				<img src="./img/ajax.png" alt="ajax">
     			</div>
-    			<div class="col col-3 col-m-3 col-s-3">
+    			<div>
     				<img src="./img/node.jpg" alt="node">
     			</div>
-    			<div class="col col-3 col-m-3 col-s-3">
+    			<div>
     				<img src="./img/react.png" alt="react">
     			</div>
-    			<div class="col col-3 col-m-3 col-s-3">
+    			<div>
     				<img src="./img/redux.png" alt="redux">
     			</div>
     		</div>
-    		<div class="row">
-    			<div class="col col-3 col-m-3 col-s-3">
+    		<div class="row_1">
+    			<div>
     				<img src="./img/git.png" alt="git">
     			</div>
-    			<div class="col col-3 col-m-3 col-s-3">
+    			<div>
     				<img src="./img/npm.png" alt="npm">
     			</div>
-    			<div class="col col-3 col-m-3 col-s-3">
+    			<div>
     				<img src="./img/mern.png" alt="mern">
     			</div>
-    			<div class="col col-3 col-m-3 col-s-3">
+    			<div>
     				<img src="./img/mongo.jpg" alt="mongo">
     			</div>
     		</div>
    		</div>
+	</section>
+	<section id="works" class="my_project">
+		<h2>My project</h2>
+		<div class="container project">
+    		<div class="row_2">
+    			<div class="describe">
+    				<h2>My Web Site</h2>
+    				<p>
+    					Website made by me. Used technologies: HTML5, CSS3, JS
+    				</p>
+    			</div>
+    			<div class="picture">
+    				<div class="layer_gal">
+   						<i class="fa fa-search"></i>
+						<i class="fa fa-eye"></i>
+  					</div>
+    				<img src="./img/project1.jpg" alt="My web site">
+    			</div>
+    		</div>
+    		<div class="row_2">
+    			<div class="describe">
+    				<h2>Picture Perfect</h2>
+    				<p>The first independent project to encode the .psd file to HTML / CSS template. 
+    					Applied technologies: HTML, CSS, RWD, GRID.
+    				</p>
+    			</div>
+    			<div class="img">
+   						<div class="layer_gal">
+   							<i class="fa fa-search"></i>
+							<i class="fa fa-eye"></i>
+  						</div>
+   						<img src="https://images.pexels.com/photos/220762/pexels-photo-220762.jpeg?h=350&auto=compress&cs=tinysrgb" alt="">
+   					</div>
+    		</div>
+    		<div class="row_2">
+    			<div class="describe">
+    				<h2>Your Life</h2>
+    				<p>
+    					The independent project to encode the .psd file to HTML/CSS and JavaScript template. 
+    					Applied technologies: HTML, CSS, RWD, GRID, JavaScript.
+    				</p>
+    			</div>
+    			<div class="picture">
+    				<div class="layer_gal">
+   						<i class="fa fa-search"></i>
+						<i class="fa fa-eye"></i>
+  					</div>
+    				<img src="./img/project2.jpg" alt="YourLife">
+    			</div>
+    		</div>
+    		<div class="row_2">
+    			<div class="describe">
+    				<h2>Rock paper scissors - Game</h2>
+    				<p>A classic game of stone, paper and scissors written in JS using Twitter Bootstrap. The game consists of any number of rounds. The end 		of the game is when one of the players scores 10 points, the draw does not give points, and the win gives 1 point for the winner of the 	round.</p>
+    			</div>
+    			<div class="picture">
+    				<div class="layer_gal">
+   						<i class="fa fa-search"></i>
+						<i class="fa fa-eye"></i>
+  					</div>
+    				<img src="./img/project3.jpg" alt="Rock paper scissors Game">
+    			</div>
+    		</div>
+    		<div class="row_2">
+    			<div class="describe">
+    				<h2>ToDo List</h2>
+    				<p>Application written in ReactJS using Webpack</p>
+    			</div>
+    			<div class="picture">
+    				<div class="layer_gal">
+   						<i class="fa fa-search"></i>
+						<i class="fa fa-eye"></i>
+  					</div>
+    				<img src="./img/project7.jpg" alt="css">
+    			</div>
+    		</div>
+    		<div class="row_2">
+    			<div class="describe">
+    				<h2>ChatApp</h2>
+    				<p>ChatApp application written in ReactJS using NodeJS, ExpressJS and Socket.io libraries</p>
+    			</div>
+    			<div class="picture">
+    				<div class="layer_gal">
+   						<i class="fa fa-search"></i>
+						<i class="fa fa-eye"></i>
+  					</div>
+    				<img src="./img/project4.jpg" alt="css">
+    			</div>
+    		</div>
+   		</div>
+	</section>
+	<section id="contact" class="contact">
+		<div class="row_3">
+    			<div class="form">
+    				<h2>Write me</h2>
+    				<form></form>
+    				<button></button>
+    			</div>
+    			<div class="data">
+    				<div class="phone_nr">
+   						<p>518 643 299<p>
+  					</div>
+    			</div>
+    			<div class="email">
+    				<div class="phone_nr">
+   						<p>magdalena.balun@gmail.com<p>
+  					</div>
+    			</div>
+    			<div class="icon">
+    				<div class="social_media">
+   						<a href="" target="_blank" class="contact__link footer__link--cv">cv</a>
+                        <a href="" target="_blank" class="contact__link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="" target="_blank" class="contact__link"><i class="fab fa-github"></i></a>
+  					</div>
+    			</div>
+    		</div>
+	</section>
+	<section>
+		<footer>
+			<p>Copywright&copy 2018 by Magda Balun</p>
+			<div><i class="fab fa-e-mail"></i>magdalena.balun@gmail.com</div>
+			<div><i class="fab fa-phone"></i>+48 518643299</div>
+		</footer>
 	</section>
 	<!-- <script src="scripts.js"></script> -->
 </body>
