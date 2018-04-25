@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,500,500i,700,700i');
-@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Muli:400,600,700,900');
 
 * { 
 	box-sizing: border-box;
@@ -12,7 +11,7 @@
 }
 body {
 	margin: 0 auto;
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Muli', sans-serif;
 }
 .container {
 	width: 100%;
@@ -42,52 +41,55 @@ body {
 
 /*jumbotron*/
 /**navigation**/
+
+.navbar {
+     height: 80px;
+}
 .navbar .navbar-nav {
-  	/*display: inline-block;*/
-  	float: right;
-  	/*vertical-align: top;*/
+     display: inline-block;
+     float: none;
+     vertical-align: top;
 }
-/*.navbar .navbar-collapse {
-  	text-align: center;
-}*/
-nav {
- 	margin: 0;
- 	padding: 0;
- 	height: 60px;
- 	text-align: center;
- 	background-color: #000;
+.navbar .navbar-collapse {
+     text-align: center;
 }
-nav li {
+.nav {
+    background: transparent;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.nav li {
     list-style: none;
-    padding: 2px;
-    margin-right: 4px;
-    text-align: left;
-   }
-nav li a {
-	text-decoration: none;
-	background-color: transparent;
-	color: #fff;
-	font-size: 16px;
-	font-weight: 700;
-	line-height: 16px;
-	text-transform: uppercase;
-	letter-spacing: 3px;
-	text-shadow: 2px 2px #000;
-	-webkit-transition: all 0.3s;
+    padding: 0 40px;
+    text-align: center;
+    background: rgba(255,20,20,0);
+}
+.nav li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 60px;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    text-shadow: 2px 2px #000;
+    -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -o-transition: all 0.3s;
-	transition: all .3s;
+    transition: all .3s;
 }
-nav li a:hover, .nav li a:focus {
-    color: #FFF;
-    transform: scale(1.2);
+.nav li a:hover {
+ 	color: #FFF;
     background: rgba(255,20,20,0);
+    transform: scale(1.2);
 }
 .navbar-brand {
 	color: #FFF;
 	font-size: 16px;
-	font-weight: 700;
-	letter-spacing: 3px;
+	font-weight: 500;
+	letter-spacing: 2px;
 	text-shadow: 2px 2px #000;
 	background: rgba(255,20,20,0);
 	transition: all .3s;
@@ -98,66 +100,116 @@ nav li a:hover, .nav li a:focus {
 	text-shadow: 2px 2px #000;
 }
 
+/*headline styles*/
+h2 {
+	overflow: hidden;
+	text-align: center;
+	font-weight: 700;
+}
+h2 > span {
+    position: relative;
+    display: inline-block;
+}
+h2 > span:before, h2 > span:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    border-bottom: 2px solid;
+    width: 100px; 
+    margin: 0 20px;
+}
+h2 > span:before{
+    right: 100%;
+}
+h2 > span:after{
+    left: 100%;
+}
+
 /*jumbotron*/
 .jumbotron {
-	background-color: #b3e6ff;
-	background-image: url("./img/img10.jpg");
+	background-image: url("./img/img28.jpg");
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	opacity: 0.5;
+	background-attachment: fixed;
 	width: 100%;
   	height: 100vh;
   	padding: 0;
   	margin: 0;
-  	
+  	position: relative;
 }
-.jumbotron_img {
-	/*background-image: url("./img/img10.png");
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	opacity: 0.7;*/
-	width: 50%;
-	float: left;
+.layer_jumb {
+	opacity: 1;
+	background: rgba(0, 0, 0, 0.5);
+	transition-duration: 0.8s;
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	padding: 0;
+  	margin: 0;
 }
 .slogan {
-	width: 50%;
-	float: right;
-	margin-top: 7vh;
+	/*border: 2px solid orange;*/
+	/*width: 80%;*/
+	margin: 0 auto;
+	margin-top: 10%;
 	
 }
+.jumbo div {
+	animation: marginLeft 3s infinite;
+	animation-iteration-count: 1;
+	animation-duration: 3s;
+	animation-timing-function: ease-out;
+}
+@keyframes marginLeft {
+    0% {
+        margin-left: -50%;
+    }
+    50% {
+        margin-left: 0;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
+
+
 .slogan h1 {
-	font-family: 'Permanent Marker', cursive;
 	color: #FFF;
-	font-size: 120px;
-	text-align: right;
+	font-size: 100px;
+	font-weight: 700;
+	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: 12px;
 	margin-top: 90px;
-	margin-right: 15vw;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+.slogan h1:first-letter {
+	font-size: 140px;
+	color: #21a298;
+	font-weight: 900;
+	font-family: 'Archivo Black', sans-serif;
 }
 .slogan h2 {
-	font-family: 'Permanent Marker', cursive;
 	color: #FFF;
-	font-size: 70px;
-	text-align: right;
-	margin-right: 15vw;
+	font-size: 60px;
+	text-align: center;
+	padding-bottom: 0;
+	margin-bottom: 0;
 }
 .slogan p {
-	font-family: 'Ubuntu', sans-serif;
 	color: #FFF;
 	font-size: 40px;
-	font-weight: 500;
-	text-align: right;
-		
+	font-weight: 600;
+	text-align: center;
 }
-/*.slogan {
-	width: 50%;
-	margin-top: 140px;
-	background-color: #000;
-	border: 3px solid #FFF;
-}*/
+.slogan p:first-letter {
+	font-size: 50px;
+	color: #21a298;
+	font-weight: 700;
+	font-family: 'Archivo Black', sans-serif;
+}
 
 /*about me*/
 .about_Me {
@@ -166,19 +218,12 @@ nav li a:hover, .nav li a:focus {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
-	/*opacity: 0.7;*/
 	width: 100%;
   	height: 100vh;
-  	/*padding-left: 25vw;
-  	padding-top: 30vh;*/
   	display: flex;
 	justify-content: center;
 	align-items: center;
-  	/*margin-bottom: 0;
-  	padding-top: 7vh;*/
-  	
 }
-
 .about {
 	width: 50%;
 	height: 40vh;
@@ -200,32 +245,52 @@ nav li a:hover, .nav li a:focus {
 }
 .about_text {
 	width: 30%;
-
 }
 .about_text h2 {
 	color: #000;
 	font-weight: 700;
 	letter-spacing: 1px;
-	text-align: left;
 }
 .about_text p {
 	color: #000;
 	font-size: 16px;
 	letter-spacing: 1px;
 	text-align: left;
+	padding-top: 20px;
 }
 
 /*skills*/
 .my_skills {
-	height: 100vh;
+	min-height: 1440px;
 	text-align: center;
 	padding-top: 80px;
 	background-color: #404040;
 	/*border: 3px solid green;*/
+	color:#fff;
+    text-align:center;
+    background-image: url('./img/dot1.png');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 12px;
+    font-family: 'Dancing Script', cursive;
+    -webkit-animation: backgroundScroll 15s linear 1;
+    -webkit-animation-fill-mode: forwards;
+    animation: backgroundScroll 15s linear 1;
+    animation-fill-mode: forwards;
 }
+@keyframes backgroundScroll {
+    from {background-position: 0 0;}
+    to {background-position: -180px 0px;}
+}
+@-webkit-keyframes backgroundScroll {
+    from {background-position: 0 0;}
+    to {background-position: -180px 0px;}
+}
+
 .my_skills h2 {
-	padding-bottom: 50px;
 	color: #FFF;
+	margin-bottom: 50px;
 }
 .row_1 {
 	display: flex;
@@ -246,6 +311,19 @@ nav li a:hover, .nav li a:focus {
 	width: 80px;
 	height: 80px;
 	object-fit: cover;
+	animation: imgPulse 1s infinite;
+	animation-timing-function: linear;
+}
+@keyframes imgPulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 /*works*/
@@ -257,14 +335,14 @@ nav li a:hover, .nav li a:focus {
 	background-attachment: fixed;
 	/*opacity: 0.7;*/
 	width: 100%;
-  	height: 100vh;
+  	min-height: 1400px;
   	padding-top: 80px;
 	padding-bottom: 50px;
 }
 .project_item h2 {
-	text-align: center;
+	color: #000;
 	margin-bottom: 50px;
-	color: #404040;
+
 }
 .row_2 {
 	display: flex;
@@ -302,6 +380,11 @@ nav li a:hover, .nav li a:focus {
 	color: #FFF;
 	padding: 0 10px;
 }
+.layer_gal h2 {
+	margin-bottom: 10px;
+	color: #FFF;
+	font-size: 20px;
+}
 .layer_gal i {
 	background: #000;
 	color: #fff;
@@ -325,48 +408,50 @@ nav li a:hover, .nav li a:focus {
 
 /*contact*/
 .contact {
-	height: 100vh;
+	min-height: 1000px;
 	background-color: #404040;
 	padding-top: 80px;
 }
 .contact h2 {
-	padding-bottom: 10vh;
 	color: #FFF;
+	margin-bottom: 50px;
 }
-/*.contact_form {
-	border: 2px solid orange;
-
-
-}*/
+.contact_form button {
+	background-color: #21a298;
+	color: #FFF;
+	font-size: 18px;
+	font-weight: 600;
+	border: none;
+	transition: easy-in .3s;
+}
+.contact_form button:hover {
+	transform: scale(1.2);
+	background-color: #21a298;
+}
 .contact_data {
 	/*border: 2px solid green;*/
 	margin-right: 0;
 	padding-right: 0;
-	
 }
 .form {
 	float: right;
 	margin-top: 100px;
-	margin-right: 5vw;
-	
-	/*height: 100vh;*/
-
+	margin-right: 3vw;
 }
 .form h3 {
 	color: #FFF;
 }
-
 .form-group input, .form-group textarea {
 	width: 300px;
 }
 .data {
 	float: left;
-	margin-left: 5vw;
+	margin-left: 3vw;
 	/*height: 100vh;*/
 }
 .data p {
 	font-size: 20px;
-	font-weight: 500;
+	font-weight: 600;
 }
 .data_1 {
 	width: 300px;
@@ -375,16 +460,17 @@ nav li a:hover, .nav li a:focus {
 	justify-content: center;
 	align-items: center;
 	font-size: 18px;
+	font-weight: 600;
 	margin: 10px;
 	background-color: #FFF;
-	border-radius: 10px;
-
+	box-shadow: 0px 0px 10px #34495e;
+	background: radial-gradient(100% 100%, #737373, #FFF);	
+	background: -webkit-radial-gradient(100% 100%, #737373, #FFF);
 }
-.data_1.email, .data_1.phone_nr{
+.data_1.email, .data_1.phone_nr {
 	display: block;
 	padding-top: 30px;
 }
-
 .icons a {
 	text-decoration: none;
 	width: 50px;
@@ -395,6 +481,7 @@ nav li a:hover, .nav li a:focus {
 	display: inline-block;
 	background-color: #000;
 	color: #FFF;
+	transition: .3s;
 }
 .icons a>i {
 	padding-top: 5px;
@@ -403,15 +490,47 @@ nav li a:hover, .nav li a:focus {
 	font-size: 20px;
 	font-weight: 700;
 }
-/*.footer {
-	width: 100%;
-	height: 100px;
-	}*/
+.icons a:hover {
+	background-color: #FFF;
+	color: #000;
+	transform: scale(1.2);
+}
+
+/*footer*/
+
 ._footer {
-	text-align: center;
-	font-size: 14px;
-	color: #FFF;
-	padding-bottom: 10px;
-	padding-top: 10px;
+	position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+	display: flex;
+	justify-content: space-between;
 	background-color: #000;
+	color: #b3b3b3;
+	padding: 5px;
+	font-size: 12px;
+	font-weight: 600;
+}
+._footer p {
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+.foot2 a {
+	text-decoration: none;
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	margin: 0 2px;
+	display: inline-block;
+	background-color: #000;
+	color: #b3b3b3;
+	padding-left: 2px;
+	transition: all .3s;
+}
+.foot2 a:last-of-type {
+	font-size: 16px;
+	font-weight: 900;
+}
+.foot2 a:hover {
+	transform: scale(1.2);
 }

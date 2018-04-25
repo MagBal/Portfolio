@@ -12,31 +12,32 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<nav class="navbar navbar-dark">
-		<div class="navbar-header">
-        	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            	<span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">MB</a>
-        </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			<ul class="nav navbar-nav">
-				<li><a href="#home">Home<span class="sr-only"></span></a></li>
-				<li><a href="#aboutMe">About me</a></li>
-				<li><a href="#skills">Skills</a></li>
-				<li><a href="#works">Works</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		</div
-	</nav>
+	
 	<section id="home" class="jumbotron">
-		<div class="container jumbo">
-			<div class="container slogan">
-				<h1>Front-end</h1>
-				<h2>developer<h2>
+		<div class="layer_jumb"></div>
+        <nav class="navbar">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">MB</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#home">Home<span class="sr-only"></span></a></li>
+                    <li><a href="#aboutMe">About me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div
+        </nav>
+        <div class="container jumbo">
+			<div class="slogan">
+				<h1>Front-end</h1><h2><span>developer</span><h2>
 				<p>Magda Balun</p>
 			</div>
 		</div>
@@ -47,7 +48,7 @@
 				<img src="./img/myPhoto.jpg" alt="my photo">
 			</div>
 			<div class="col-6 col-m-6 col-s-12 about_text">
-				<h2>About me</h2>
+				<h2><span>About me<span></h2>
 				<p>
 					Programming is my passion, that's why I decided to change my professional life by 360 degrees and make my dream come true. 
 					I love learning new things, meet new people and build future with them. I know I have a lot of things to learn. 
@@ -57,7 +58,7 @@
 		</div>
 	</section>
 	<section id="skills" class="my_skills">
-		<h2>My skills</h2>
+		<h2><span>My skills<span></h2>
 		<div class="container skills">
     		<div class="row_1">
     			<div>
@@ -119,7 +120,7 @@
 	</section>
 	<section id="works" class="my_project">
 		<div class="project_item">
-			<h2>My project</h2>
+			<h2><span>My project<span></h2>
 			<div class="container project">
     			<div class="row_2">
     				<div class="picture">
@@ -199,8 +200,8 @@
    		</div>
 	</section>
 	<section id="contact" class="contact">
-		<h2>Contact</h2>
-		<div class="row">
+		<h2><span>Contact<span></h2>
+		<div class="container row">
 			<div class="col col-6 col-m-6 col-s-12 contact_form">
     			<div class="form">
     		    	<h3 class="contact_title">Send a message</h3>
@@ -211,7 +212,7 @@
     					<div class="form-group">
             				<textarea class="form-control" rows="5" placeholder="Enter message"></textarea>
     					</div>
-        				<button type="submit" class="btn btn-success">Submit</button>
+        				<button type="submit" class="btn btn-success">Send</button>
   					</form>
                 </div>
     		</div>
@@ -236,10 +237,17 @@
 	</section>
 	<section class="footer">
 		<div class="container _footer">
-			<p>Copywright&copy 2018 by Magda Balun</p>
-			<p>magdalena.balun@gmail.com</p>
-			<p><i class="fas fa-phone"></i>+48 518643299</p>
-		</div>
+            <div class="foot1">
+                <p>Copywright&copy 2018 by Magda Balun</p>
+                <p>magdalena.balun@gmail.com</p>
+                <p><i class="fas fa-phone"></i>+48 518 643 299</p>
+            </div>
+            <div class="foot2">
+                <a href="https://www.linkedin.com/in/magdalena-balun-28b99812/"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                <a href="https://github.com/MagBal"><i class="fab fa-github fa-lg"></i></a>
+                <a href="https://github.com/MagBal/Portfolio/blob/master/CV/Magda_Balun_CV.pdf">CV</a>
+		    </div>
+        </div>
 	</section>
 	<!-- <script src="scripts.js"></script> -->
 </body>
