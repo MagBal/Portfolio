@@ -14,35 +14,37 @@
 <body>
 	
 	<section id="home" class="jumbotron">
-		<div class="layer_jumb"></div>
-        <nav class="navbar">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">MB</a>
-            </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li><a href="#home">Home<span class="sr-only"></span></a></li>
-                    <li><a href="#aboutMe">About me</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#works">Works</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div
-        </nav>
+		<div class="container">
+            <nav id="nav" class="navbar navbar-dark navbar-fixed-top">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">MB</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#aboutMe">About me</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#works">Works</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div
+            </nav>
+        </div>
         <div class="container jumbo">
 			<div class="slogan">
 				<h1>Front-end</h1><h2><span>developer</span><h2>
 				<p>Magda Balun</p>
 			</div>
 		</div>
-	</section>
-	<section id="aboutMe" class="about_Me">
+        <div id="startchange"></div>
+    </section>
+    <section id="aboutMe" class="about_Me">
 		<div class="row about">
 			<div class="col-6 col-m-6 col-s-12 photo">
 				<img src="./img/myPhoto.jpg" alt="my photo">
@@ -50,7 +52,7 @@
 			<div class="col-6 col-m-6 col-s-12 about_text">
 				<h2><span>About me<span></h2>
 				<p>
-					Programming is my passion, that's why I decided to change my professional life by 360 degrees and make my dream come true. 
+					Programming is my passion, that's why I decided to change my professional life by 180 degrees and make my dream come true. 
 					I love learning new things, meet new people and build future with them. I know I have a lot of things to learn. 
 					This is a challenge which I’m happy about.
 				</p>
@@ -58,7 +60,7 @@
 		</div>
 	</section>
 	<section id="skills" class="my_skills">
-		<h2><span>My skills<span></h2>
+        <h2><span>My skills<span></h2>
 		<div class="container skills">
     		<div class="row_1">
     			<div>
@@ -117,6 +119,7 @@
     			</div>
     		</div>
    		</div>
+        
 	</section>
 	<section id="works" class="my_project">
 		<div class="project_item">
@@ -238,17 +241,21 @@
 	<section class="footer">
 		<div class="container _footer">
             <div class="foot1">
-                <p>Copywright&copy 2018 by Magda Balun</p>
                 <p>magdalena.balun@gmail.com</p>
                 <p><i class="fas fa-phone"></i>+48 518 643 299</p>
             </div>
             <div class="foot2">
+                <p>Copywright &copy 2018 by Magda Balun</p>
                 <a href="https://www.linkedin.com/in/magdalena-balun-28b99812/"><i class="fab fa-linkedin-in fa-lg"></i></a>
                 <a href="https://github.com/MagBal"><i class="fab fa-github fa-lg"></i></a>
                 <a href="https://github.com/MagBal/Portfolio/blob/master/CV/Magda_Balun_CV.pdf">CV</a>
 		    </div>
         </div>
 	</section>
-	<!-- <script src="scripts.js"></script> -->
+	
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
