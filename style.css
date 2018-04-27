@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Muli:400,600,700,900');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Muli:400,600,700,900|Rock+Salt');
 
 * { 
 	box-sizing: border-box;
@@ -42,7 +42,7 @@ body {
 /*jumbotron*/
 /**navigation**/
 
-.navbar.navbar-default.navbar-fixed-top {
+.navbar.navbar-dark {
     max-height: 50px;
     background-color: transparent;
     border-color: transparent;
@@ -60,7 +60,7 @@ body {
 }
 .nav li {
     list-style: none;
-    padding: 0 40px;
+    padding: 0 50px;
     text-align: center;
     background: rgba(255,20,20,0);
 }
@@ -71,31 +71,35 @@ body {
     font-weight: 700;
     line-height: 50px;
     text-transform: uppercase;
-    letter-spacing: 7px;
+    letter-spacing: 5px;
     text-shadow: 2px 2px #000;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all .3s;
 }
-.nav li a:hover {
- 	color: #FFF;
+.nav li a:hover, .nav li a:focus {
+ 	color: #21a298;
     background: rgba(255,20,20,0);
-    transform: scale(1.2);
 }
-.navbar-brand {
+.nav li a:focus {
 	color: #FFF;
-	font-size: 16px;
-	font-weight: 500;
-	letter-spacing: 2px;
-	text-shadow: 2px 2px #000;
-	background: rgba(255,20,20,0);
-	transition: all .3s;
 }
-.navbar-brand:hover {
-	color: #FFF;
-	transform: scale(1.2);
-	text-shadow: 2px 2px #000;
+.logo {
+    font-family: 'Rock Salt', cursive;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #FFF;
+    font-size: 20px;
+    line-height: 60px;
+    text-align: center;
+    background: #21a298;
+    color: white;
+    position: fixed;
+	top: 30px;
+    left: 60px;
+    opacity: 0.7;
 }
 
 /*headline styles*/
@@ -314,26 +318,22 @@ h2 > span:after{
 .project_item h2 {
 	color: #000;
 	margin-bottom: 50px;
-
 }
 .row_2 {
 	display: flex;
 	margin: 0 auto;
 	justify-content: center;
-	/*align-items: center;*/
 	flex-wrap: wrap;
 	width: 1100px;
 	height: auto;
 	margin-bottom: 20px;
-	/*border: 2px solid orange;*/
 }
 
 .picture {
 	position: relative;
-	padding: 30px;
-	background-color: #000;
+	padding: 20px;
+	background-color: #595959;
 	border-radius: 10px;
-	/*border: 2px solid orange;*/
 	margin-right: 20px;
 }
 .picture img {
@@ -341,7 +341,7 @@ h2 > span:after{
 	width: 400px;
 	height: 250px;
 	object-fit: cover;
-	border: 2px solid #FFF;
+	/*border: 2px solid #FFF;*/
 }
 .layer_gal {
 	opacity: 0;
@@ -358,7 +358,7 @@ h2 > span:after{
 	font-size: 20px;
 }
 .layer_gal i {
-	background: #000;
+	background: #21a298;
 	color: #fff;
 	position: relative;
 	margin-top: 80vh;
@@ -367,6 +367,11 @@ h2 > span:after{
 	margin: 5px;
 	border: 2px solid #FFF;
 	cursor: pointer;
+	transition: .3s;
+}
+.layer_gal i:hover {
+	color: #21a298;
+	background-color: #FFF;
 }
 .picture:hover .layer_gal {
 	opacity: 1;
@@ -383,6 +388,7 @@ h2 > span:after{
 	min-height: 1000px;
 	background-color: #404040;
 	padding-top: 80px;
+	margin-bottom: 0;
 }
 .contact h2 {
 	color: #FFF;
@@ -472,7 +478,7 @@ h2 > span:after{
 
 ._footer {
 	position: fixed;
-    left: 0;
+	left: 0;
     bottom: 0;
     width: 100%;
 	display: flex;
@@ -492,7 +498,7 @@ h2 > span:after{
 	width: 25px;
 	height: 25px;
 	line-height: 25px;
-	margin: 0 2px;
+	margin: 0 4px;
 	display: inline-block;
 	background-color: #000;
 	color: #21a298;
@@ -505,4 +511,20 @@ h2 > span:after{
 }
 .foot2 a:hover {
 	transform: scale(1.2);
+}
+
+/*back to top link*/
+.to-top{
+    text-align: center;
+}
+#scroll-to-top{
+    display: none;
+    position: fixed;
+    bottom: 60px;
+    right: 30px;
+    opacity: 0.8;
+    color: #21a298;
+}
+#scroll-to-top:hover{
+    opacity: 1;
 }

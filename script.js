@@ -5,26 +5,30 @@ $("#nav ul li a[href^='#']").on("click", function(e) {
     {
       scrollTop: $(this.hash).offset().top
     },
-    1000,
+    1500,
     function() {
       window.location.hash = this.hash;
     }
   );
 });
 
-//change navbar background when scrolling
-$(document).ready(function(){       
-    var scroll_start = 0;
-    var startchange = $('#startchange');
-    var offset = startchange.offset();
-    if (startchange.length){
-        $(document).scroll(function() { 
-            scroll_start = $(document).scrollTop();
-            if(scroll_start > offset.top) {
-                $(".navbar").css('background-color', '#000');
-            } else {
-                $('.navbar').css('background-color', 'transparent');
-            }
-        });
-    }
+//up to top
+$(function(){
+    var isShown = false;
+    $(window).scroll(function(){
+       var win_height = 300;
+       var scroll_top = $(document).scrollTop(); 
+       if (scroll_top > win_height && !isShown) {
+          isShown = true;
+          $("#scroll-to-top").fadeIn();
+       } else if (scroll_top < win_height && isShown) {
+          isShown = false;
+          $("#scroll-to-top").fadeOut();
+       }
+   });
+   $("#scroll-to-top").click(function(e){
+      e.preventDefault();
+      $('html, body').animate({scrollTop:0}, 1500);
+    });
  });
+    
