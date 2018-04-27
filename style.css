@@ -457,7 +457,7 @@ h2 > span:after{
 	line-height: 50px;
 	margin: 0 5px;
 	display: inline-block;
-	background-color: #000;
+	background-color: #21a298;
 	color: #FFF;
 	transition: .3s;
 }
@@ -470,7 +470,7 @@ h2 > span:after{
 }
 .icons a:hover {
 	background-color: #FFF;
-	color: #000;
+	color: #21a298;
 	transform: scale(1.2);
 }
 
